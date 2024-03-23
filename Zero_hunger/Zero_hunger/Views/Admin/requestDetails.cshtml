@@ -1,0 +1,121 @@
+﻿@model Zero_hunger.DB.Request
+
+@{
+    ViewBag.Title = "requestDetails";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["msg"]
+    </div>
+}
+<h2>requestdetails</h2>
+
+<ul class="list-group list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                ID
+            </div>
+            @Model.id
+        </div>
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                Status
+            </div>
+            @Model.status
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                Order datetime
+            </div>
+            @Model.order_time.ToString();
+        </div>
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                Expire Date time
+            </div>
+            @Model.expire_time.ToString();
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                Requested by
+            </div>
+            <a href="/admin/restaurantDetails/@Model.Restaurant.id.ToString()">
+                @Model.Restaurant.username
+            </a>
+        </div>
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                Total quantity
+            </div>
+            @Model.total_quantity
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                Assigned Employee
+            </div>
+            @(Model.Employee != null ? Model.Employee.username : "Not assigned")
+            @if (Model.Employee != null)
+            {
+                <a href="#">@Model.Employee.username</a>
+            }
+            else
+            {
+                <span>Not assigned</span>
+            }
+            @if (!Model.status.Equals("collected"))
+            {
+                <!-- Form is here-->
+                <form method="post">
+                    <input type="hidden" value="@Model.id.ToString()" name="id" />
+                    <!--input type="text" name="emp_id" placeholder="@(Model.Employee != null ? Model.Employee.id.ToString() : "Not assigned")" /-->
+                    <select name="emp_id">
+                        <option disabled @(Model.Employee == null ? "selected" : "")>None</option>
+                        @foreach (Zero_hunger.DB.Employee e in ViewBag.empList)
+                        {
+                            <option value="@e.id" @(Model.Employee != null && Model.Employee.id.Equals(e.id) ? "selected" : "")>@e.name</option>
+                        }
+                    </select>
+                    <input type="submit" value="Assign or Change" class="btn btn-danger" />
+                </form>
+            }
+        </div>
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                Assigned by
+            </div>
+            @(Model.Admin != null ? Model.Admin.username : "Not assigned")
+        </div>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                Food list:
+            </div>
+            <table class="table table-bordered">
+                <tr>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Quantity</th>
+                </tr>
+                @foreach (var item in Model.Foods.ToList())
+                {
+                    <tr>
+                        <td>@item.id</td>
+                        <td>@item.type</td>
+                        <td>@item.quantity</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </li>
+</ul>
