@@ -1,0 +1,12 @@
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\bin\Debug\BLL.dll
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\bin\Debug\BLL.pdb
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\bin\Debug\DAL.dll
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\bin\Debug\EntityFramework.dll
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\bin\Debug\DAL.pdb
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\bin\Debug\DAL.dll.config
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\bin\Debug\EntityFramework.xml
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\obj\Debug\BLL.dll
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\BLL\obj\Debug\BLL.pdb

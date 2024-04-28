@@ -1,0 +1,14 @@
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\bin\Debug\DAL.dll.config
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\bin\Debug\DAL.dll
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\bin\Debug\DAL.pdb
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\bin\Debug\EntityFramework.dll
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\bin\Debug\EntityFramework.xml
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\obj\Debug\DAL.dll
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\obj\Debug\DAL.pdb
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\obj\Debug\DAL.Migrations.InitDb.resources
+D:\AIUB\SEMESTER 9\.NET\CODE\DealFoods\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
